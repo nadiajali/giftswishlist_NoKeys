@@ -1,0 +1,17 @@
+/*
+.product {
+    max-width: 15rem;
+}
+*/
+
+.product img {
+    margin: auto;
+    margin-top: 20px;
+    max-height: 12rem;
+    width: auto;
+    height: auto;
+}
+
+.product h4 {
+    min-block-size: 3.5rem;
+}
