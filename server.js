@@ -19,9 +19,15 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("web/build"));
 }
 
+/*
 var db = mongoose.connect(
   "mongodb://localhost/gifts" ||
     "mongodb+srv://user:hYN8Fnfs207BL@cluster0.khx4l.mongodb.net/gifts?retryWrites=true&w=majority"
+);
+*/
+
+var db = mongoose.connect(
+  "mongodb+srv://user:hYN8Fnfs207BL@cluster0.khx4l.mongodb.net/gifts?retryWrites=true&w=majority"
 );
 var Product = require("./model/product");
 var WishList = require("./model/wishlist");
