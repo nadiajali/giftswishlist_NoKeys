@@ -4,7 +4,15 @@ var bodyParser = require("body-parser");
 var mongoose = require("mongoose");
 const { response, request } = require("express");
 
-const PORT = process.env.PORT || 3000;
+// const PORT = process.env.PORT || 3000;
+
+app.listen(process.env.PORT || 3000, function () {
+  console.log(
+    "Express server listening on port %d in %s mode.",
+    this.address().port,
+    app.settings.env
+  );
+});
 
 // Serves up static assets. Usually on Heroku.
 if (process.env.NODE_ENV === "production") {
