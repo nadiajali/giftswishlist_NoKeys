@@ -21,7 +21,7 @@ if (process.env.NODE_ENV === "production") {
 
 var db = mongoose.connect(
   "mongodb://localhost/gifts" ||
-    "mongodb+srv://user:hYN8Fnfs207BL@cluster0.6g9uc.mongodb.net/gifts?retryWrites=true&w=majority"
+    "mongodb+srv://user:hYN8Fnfs207BL@cluster0.khx4l.mongodb.net/nadiajali?retryWrites=true&w=majority"
 );
 var Product = require("./model/product");
 var WishList = require("./model/wishlist");
