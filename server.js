@@ -8,7 +8,7 @@ const { response, request } = require("express");
 
 app.listen(process.env.PORT || 3000, function () {
   console.log(
-    "Express server listening on port %d in %s mode.",
+    "Express Server listening on port %d in %s mode.",
     this.address().port,
     app.settings.env
   );
@@ -26,16 +26,17 @@ var db = mongoose.connect(
 );
 */
 
+// Database Connection
 var db = mongoose.connect(
   "mongodb+srv://user:hYN8Fnfs207BL@cluster0.khx4l.mongodb.net/gifts?retryWrites=true&w=majority",
   { useNewUrlParser: true }
 );
 const conn = mongoose.connection;
 mongoose.connection.once("open", () => {
-  console.log("MongoDB Connected");
+  console.log("MongoDB Atlas Connected");
 });
 mongoose.connection.on("error", (err) => {
-  console.log("MongoDB connection error: ", err);
+  console.log("MongoDB Atlas Connection Error: ", err);
 });
 
 var Product = require("./model/product");
@@ -210,6 +211,8 @@ app.put('/ingredients/:ingredientID', function (req, res) {
 });
 */
 
+/*
 app.listen(3000, function () {
   console.log("Financial Gifts running on port 3000.");
 });
+*/

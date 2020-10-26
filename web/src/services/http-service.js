@@ -3,9 +3,17 @@ import "whatwg-fetch";
 class HttpService {
   getProducts = () => {
     var promise = new Promise((resolve, reject) => {
-      fetch("http://localhost:3000/product").then((res) => {
-        resolve(res.json());
-      });
+      if (process.env.NODE_ENV === "production") {
+        fetch("https://nadiajali-giftswishlist.herokuapp.com/product").then(
+          (res) => {
+            resolve(res.json());
+          }
+        );
+      } else if (process.env.NODE_ENV === "development") {
+        fetch("http://localhost:3000/product").then((res) => {
+          resolve(res.json());
+        });
+      }
     });
     return promise;
   };
