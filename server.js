@@ -27,8 +27,17 @@ var db = mongoose.connect(
 */
 
 var db = mongoose.connect(
-  "mongodb+srv://user:hYN8Fnfs207BL@cluster0.khx4l.mongodb.net/gifts?retryWrites=true&w=majority"
+  "mongodb+srv://user:hYN8Fnfs207BL@cluster0.khx4l.mongodb.net/gifts?retryWrites=true&w=majority",
+  { useNewUrlParser: true }
 );
+const conn = mongoose.connection;
+mongoose.connection.once("open", () => {
+  console.log("MongoDB Connected");
+});
+mongoose.connection.on("error", (err) => {
+  console.log("MongoDB connection error: ", err);
+});
+
 var Product = require("./model/product");
 var WishList = require("./model/wishlist");
 
