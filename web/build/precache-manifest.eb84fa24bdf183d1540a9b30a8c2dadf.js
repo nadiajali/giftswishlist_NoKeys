@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3f13da80762bc70e07749af31191cd61",
+    "revision": "bba95f931932998edda2a9e80e29ddce",
     "url": "/index.html"
   },
   {
-    "revision": "bbe989edc3637c837ee3",
+    "revision": "4a0d6a8936a7ace3209a",
     "url": "/static/css/main.d42b83ac.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.d4926984.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bbe989edc3637c837ee3",
-    "url": "/static/js/main.88f8dfa8.chunk.js"
+    "revision": "4a0d6a8936a7ace3209a",
+    "url": "/static/js/main.e71eac6c.chunk.js"
   },
   {
     "revision": "6981919806c089cef906",
@@ -25,6 +25,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "46b032cec2b575ad973463abec64a11c",
-    "url": "/static/media/accountinggifts.46b032ce.jpg"
+    "url": "/static/media/logo.46b032ce.jpg"
   }
 ]);
