@@ -22,13 +22,13 @@ if (process.env.NODE_ENV === "production") {
 /*
 var db = mongoose.connect(
   "mongodb://localhost/gifts" ||
-    "mongodb+srv://user:hYN8Fnfs207BL@cluster0.khx4l.mongodb.net/gifts?retryWrites=true&w=majority"
+    "mongodb+srv://[REMOVED]:[REMOVED]@[REMOVED]"
 );
 */
 
 // Database Connection
 var db = mongoose.connect(
-  "mongodb+srv://user:hYN8Fnfs207BL@cluster0.khx4l.mongodb.net/gifts?retryWrites=true&w=majority",
+  "mongodb+srv://[REMOVED]:[REMOVED]@[REMOVED]",
   { useNewUrlParser: true }
 );
 const conn = mongoose.connection;
